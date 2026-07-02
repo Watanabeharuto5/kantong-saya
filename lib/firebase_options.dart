@@ -17,16 +17,16 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        return ios;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for ios - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -49,20 +49,21 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCWAzGMTyg1uSspi1qfno71sj4iCfp7qGk',
-    appId: '1:948878883710:android:516b94bdc2276b68a0512f',
-    messagingSenderId: '948878883710',
-    projectId: 'fir-emoney-e9256',
-    storageBucket: 'fir-emoney-e9256.firebasestorage.app',
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyCdqMnzZ_ud5F_Bh9nhOJblTYIU7atIsV8',
+    appId: '1:934045033606:web:a1ecbebedef4cc9f069d07',
+    messagingSenderId: '934045033606',
+    projectId: 'emoney-18ebf',
+    authDomain: 'emoney-18ebf.firebaseapp.com',
+    storageBucket: 'emoney-18ebf.firebasestorage.app',
+    measurementId: 'G-S2V2T1M71V',
   );
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyA46uBUvmVQKsSL7HIXZG58MD9jXQCFX7c',
-    appId: '1:948878883710:ios:5363ad2b9fbe06b2a0512f',
-    messagingSenderId: '948878883710',
-    projectId: 'fir-emoney-e9256',
-    storageBucket: 'fir-emoney-e9256.firebasestorage.app',
-    iosBundleId: 'com.kampus.dompetKampusGlobal',
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyBZL5G9bBMRqorEqSy0z8YQRNyHi0ztB6o',
+    appId: '1:934045033606:android:033c069b52706858069d07',
+    messagingSenderId: '934045033606',
+    projectId: 'emoney-18ebf',
+    storageBucket: 'emoney-18ebf.firebasestorage.app',
   );
 }
