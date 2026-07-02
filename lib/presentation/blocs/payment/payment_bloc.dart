@@ -1,6 +1,8 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
 import '../../../core/error/failures.dart';
+import '../../../core/services/notification_service.dart';
+import '../../../core/utils/currency_formatter.dart';
 import '../../../domain/entities/payment_result_entity.dart';
 import '../../../domain/usecases/payment/payment_usecases.dart';
 
@@ -97,6 +99,14 @@ class PaymentBloc extends Bloc<PaymentEvent, PaymentState> {
     emit(PaymentLoading());
     try {
       final result = await _topup(event.amount);
+
+      // Kirim notifikasi lokal sukses top up
+      await NotificationService.showNotification(
+        id: 201,
+        title: 'Top Up Berhasil',
+        body: 'Isi saldo sebesar ${CurrencyFormatter.format(result.amount)} sukses dilakukan.',
+      );
+
       emit(PaymentTopupSuccess(balance: result.balance, amount: result.amount));
     } on ServerFailure catch (e) {
       emit(PaymentError(e.message));
