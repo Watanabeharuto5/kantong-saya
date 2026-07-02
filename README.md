@@ -281,3 +281,4 @@ flutter run
 
 - **[backendkantongsaya](https://github.com/Watanabeharuto5/VibraAyuKarisma_1123150115_UAS_BeEmoney.git)** — Backend untuk aplikasi Kantong Ku
 
+- **[Backend K-Pop](https://github.com/Watanabeharuto5/gin-firebase-backend-w5.git)** — Backend & Database untuk aplikasi K-Pop  
