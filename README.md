@@ -277,4 +277,7 @@ flutter run
 
 ## 🔗 Proyek Terkait
 
-- **[koreanpop_album](../koreanpop_album/README.md)** — Aplikasi toko K-Pop yang terintegrasi sebagai merchant dengan Kantong Ku
+- **[koreanpop_album](https://github.com/Watanabeharuto5/UTS_VibraAyuKarisma_1123150115.git)** — Aplikasi toko K-Pop yang terintegrasi sebagai merchant dengan Kantong Ku
+
+- **[backendkantongsaya](https://github.com/Watanabeharuto5/VibraAyuKarisma_1123150115_UAS_BeEmoney.git)** — Backend untuk aplikasi Kantong Ku
+
