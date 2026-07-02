@@ -284,3 +284,16 @@ flutter run
 - **[Backend K-Pop](https://github.com/Watanabeharuto5/gin-firebase-backend-w5.git)** — Backend & Database untuk aplikasi K-Pop
 
 - **[Aplikasi Kantong Ku](https://github.com/Watanabeharuto5/VibraAyuKarisma_1123150115_UAS.git)** — Aplikasi Emoney Kantong Ku
+
+
+# UI Aplikasi Dompet ku & K-Pop Albums
+
+* Tampilan ketika aplikasi berjalan
+
+ Tampilan 1
+<p align="center">
+  <img src="assets/images/kantong1.png" width="200"/>
+  <img src="assets/images/kantong2.png" width="200"/>
+  <img src="assets/images/kantong3.png" width="200"/>
+
+</p>
