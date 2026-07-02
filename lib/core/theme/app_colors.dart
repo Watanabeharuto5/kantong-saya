@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  // Primary Blue
-  static const Color primary = Color(0xFF0B63E5);
-  static const Color primaryLight = Color(0xFF2C8BFF);
-  static const Color primaryDark = Color(0xFF0A4FBF);
-  static const Color primarySurface = Color(0xFFE8F1FD);
-  static const Color primaryBorder = Color(0xFFB8D0F7);
+  // Primary Green-Yellow (Matching Logo)
+  static const Color primary = Color(0xFF10B981); // Emerald Green
+  static const Color primaryLight = Color(0xFF34D399); // Light Mint
+  static const Color primaryDark = Color(0xFF047857); // Deep Emerald
+  static const Color primarySurface = Color(0xFFECFDF5); // Mint Surface
+  static const Color primaryBorder = Color(0xFFA7F3D0); // Mint Border
 
   // Semantic
   static const Color green = Color(0xFF16A571);
@@ -29,12 +29,12 @@ class AppColors {
   static const Color bg = Color(0xFFF6F7F9);
   static const Color white = Color(0xFFFFFFFF);
 
-  // Gradient
+  // Gradient (Green to Yellow/Amber)
   static const LinearGradient primaryGradient = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
     stops: [0.0, 0.55, 1.0],
-    colors: [primaryLight, primary, primaryDark],
+    colors: [primaryLight, primary, Color(0xFFFBBF24)],
   );
 
   // Shadows
@@ -56,7 +56,7 @@ class AppColors {
   ];
   static List<BoxShadow> shadowPrimary = [
     BoxShadow(
-      color: Color(0x520B63E5),
+      color: Color(0x5210B981),
       blurRadius: 22,
       spreadRadius: 0,
       offset: Offset(0, 10),
