@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import '../../../core/services/biometric_service.dart';
+import '../../../core/services/notification_service.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../domain/repositories/auth_repository.dart';
 import '../../../injection/injection_container.dart';
@@ -44,6 +45,14 @@ class _AccountPageState extends State<AccountPage> {
         setState(() {
           _biometricEnabled = true;
         });
+
+        // Kirim notifikasi keamanan lokal
+        await NotificationService.showNotification(
+          id: 101,
+          title: 'Keamanan Kantong Ku',
+          body: 'Login biometrik (sidik jari) berhasil diaktifkan.',
+        );
+
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text('Login biometrik berhasil diaktifkan.')),
@@ -61,6 +70,14 @@ class _AccountPageState extends State<AccountPage> {
       setState(() {
         _biometricEnabled = false;
       });
+
+      // Kirim notifikasi keamanan lokal
+      await NotificationService.showNotification(
+        id: 101,
+        title: 'Keamanan Kantong Ku',
+        body: 'Login biometrik (sidik jari) telah dinonaktifkan.',
+      );
+
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('Login biometrik dinonaktifkan.')),
