@@ -293,8 +293,15 @@ flutter run
 
  Tampilan 1
 <p align="center">
-  <img src="assets/images/kantong1.png" width="200"/>
-  <img src="assets/images/kantong2.png" width="200"/>
-  <img src="assets/images/kantong3.png" width="200"/>
+  <img src="assets/images/kantong1_.png" width="200"/>
+  <img src="assets/images/kantong2_.png" width="200"/>
+  <img src="assets/images/kantong3_.png" width="200"/>
+  <img src="assets/images/kantong4_.png" width="200"/>
+  <img src="assets/images/kantong5_.png" width="200"/>
+  <img src="assets/images/kantong6_.png" width="200"/>
+  <img src="assets/images/kantong7_.png" width="200"/>
+  <img src="assets/images/kantong8_.png" width="200"/>
+  <img src="assets/images/kantong9_.png" width="200"/>
+  <img src="assets/images/kantong10_.png" width="200"/>
 
 </p>
