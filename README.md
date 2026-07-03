@@ -28,7 +28,7 @@ Proyek **Emoney_** menggunakan pola **Clean Architecture** dengan pemisahan tang
 │       (Business Logic: Entities, Use Cases, Repo IF)     │
 ├─────────────────────────────────────────────────────────┤
 │                     DATA LAYER                           │
-│   (Data Source: API, Firebase, Model, Repo Implementation│
+│   (Data Source: API, Firebase, Model, Repo Implementation)│
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -290,6 +290,7 @@ flutter run
 
 - **[Link Presentasi Youtube](https://www.youtube.com/watch?v=rwtJSPoUn_Q)** — Presentasi Youtube Fibra Cuantek _ 
 
+- **[Link Presentasi Youtube](https://www.youtube.com/watch?v=rwtJSPoUn_Q)** — Presentasi Youtube pibra Cuantek _ 
 
 # UI Aplikasi Dompet ku & K-Pop Albums
 
@@ -308,5 +309,4 @@ flutter run
   <img src="assets/images/kantongku8_.png" width="200"/>
   <img src="assets/images/kantongku9_.png" width="200"/>
   <img src="assets/images/kantongku10_.png" width="200"/>
-
 </p>
